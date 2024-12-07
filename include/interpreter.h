@@ -18,6 +18,7 @@ class Parser {
 public:
     explicit Parser(const std::vector<std::string>& tokens);
     void parse();
+    std::vector<std::string> getCommands() const;
 private:
     std::vector<std::string> tokens;
 };
