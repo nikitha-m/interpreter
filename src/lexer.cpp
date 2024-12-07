@@ -3,6 +3,7 @@
 #include <sstream>
 
 Lexer::Lexer(const std::string& source) : sourceCode(source) {}
+
 void Lexer::tokenize() {
     // Simple tokenization logic (for example purposes)
     std::stringstream ss(sourceCode);
@@ -15,11 +16,6 @@ void Lexer::tokenize() {
         std::cout << "Token: " << token << std::endl;
     }
 }
-
-// lexer.cpp
-#include "interpreter.h"
-
-// Other existing code...
 
 std::vector<std::string> Lexer::getTokens() const {
     return tokens;  // Return the tokens vector
